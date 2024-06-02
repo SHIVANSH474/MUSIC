@@ -33,7 +33,6 @@ def track_markup(_, videoid, user_id, channel, fplay):
             InlineKeyboardButton(text="Replay", callback_data=f"ADMIN Replay|{chat_id}"),
             InlineKeyboardButton(text="End", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
-
     ]
 
     return buttons
@@ -88,8 +87,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         [
             InlineKeyboardButton(text="ʀᴇsᴜᴍᴇ", callback_data=f"ADMIN Resume|{chat_id}"),
             InlineKeyboardButton(text="ʀᴇᴘʟᴀʏ", callback_data=f"ADMIN Replay|{chat_id}"),
-        ],
-        
+        ], 
     ]
 
     return buttons
@@ -119,8 +117,7 @@ def stream_markup(_, chat_id):
         [
             InlineKeyboardButton(text="ʀᴇsᴜᴍᴇ", callback_data=f"ADMIN Resume|{chat_id}"),
             InlineKeyboardButton(text="ʀᴇᴘʟᴀʏ", callback_data=f"ADMIN Replay|{chat_id}"),
-        ],
-        
+        ], 
     ]
 
     return buttons
@@ -243,8 +240,7 @@ def queue_markup(_, videoid, chat_id):
         [
             InlineKeyboardButton(text="ʀᴇsᴜᴍᴇ", callback_data=f"ADMIN Resume|{chat_id}"),
             InlineKeyboardButton(text="ʀᴇᴘʟᴀʏ", callback_data=f"ADMIN Replay|{chat_id}"),
-        ],
-        
+        ], 
     ]
 
     return buttons
@@ -281,8 +277,7 @@ def speed_markup(_, chat_id):
             ],
                     [
             InlineKeyboardButton(text="sᴘᴇᴇᴅ", callback_data=f"ADMIN speed|{chat_id}"),
-        ],
-        
+        ],  
     ]
     
     
